@@ -1,2 +1,0 @@
-[     183ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:8080/:0
-[     186ms] [LOG] [11ty][20:00:20.071 UTC] Connected @ http://localhost:8080/.11ty/reload-client.js:20

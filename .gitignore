@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Playwright MCP
+.playwright-mcp/
+
+# Backup files
+*.bak
+
+# Logs
+*.log
+
+# Node modules
+node_modules/
+
+# IDE
+.vscode/
+.idea/
