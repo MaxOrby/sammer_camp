@@ -1,0 +1,1185 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Сервіс працює у тестовому режимі!
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - link "logo" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "logo" [ref=e8]
+        - generic [ref=e11]:
+          - textbox "Знайти товар!" [ref=e12]
+          - generic:
+            - img
+        - generic [ref=e13]:
+          - generic [ref=e14]:
+            - button "Увійти" [ref=e15] [cursor=pointer]:
+              - img [ref=e16]
+              - generic [ref=e20]: Увійти
+            - button "Кошик" [ref=e21] [cursor=pointer]:
+              - generic [ref=e22]: "1"
+              - img [ref=e23]
+              - generic [ref=e28]: Кошик
+          - list [ref=e30]:
+            - listitem [ref=e31]:
+              - link "UA" [ref=e32] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e33]: "|"
+            - listitem [ref=e34]:
+              - link "RU" [ref=e35] [cursor=pointer]:
+                - /url: "#"
+      - navigation "Основное меню" [ref=e38]:
+        - list [ref=e40]:
+          - listitem [ref=e41]:
+            - menuitem "Швейна Фурнітура" [ref=e42] [cursor=pointer]:
+              - img [ref=e43]
+              - generic [ref=e47]: Швейна Фурнітура
+            - menu "Подкатегории Швейна Фурнітура":
+              - menuitem "Новые поступления":
+                - img
+                - generic: Новые поступления
+              - menuitem "Бельевая фурнитура":
+                - img
+                - generic: Бельевая фурнитура
+              - menuitem "Вспомогательное оборудование":
+                - img
+                - generic: Вспомогательное оборудование
+              - menuitem "Змейка-молния":
+                - img
+                - generic: Змейка-молния
+              - menuitem "Иглы":
+                - img
+                - generic: Иглы
+              - menuitem "Канаты":
+                - img
+                - generic: Канаты
+              - menuitem "Кант втачной":
+                - img
+                - generic: Кант втачной
+              - menuitem "Корсажная лента":
+                - img
+                - generic: Корсажная лента
+              - menuitem "Косая бейка|Окантовка":
+                - img
+                - generic: Косая бейка|Окантовка
+              - menuitem "Кружево":
+                - img
+                - generic: Кружево
+              - menuitem "Лента":
+                - img
+                - generic: Лента
+              - menuitem "Лента, тесьма, стropa":
+                - img
+                - generic: Лента, тесьма, стropa
+              - menuitem "Липучка":
+                - img
+                - generic: Липучка
+              - menuitem "Металлическая и пластмассовая фурнитура":
+                - img
+                - generic: Металлическая и пластмассовая фурнитура
+              - menuitem "Нитка":
+                - img
+                - generic: Нитка
+              - menuitem "Плечики и плечевые накладки":
+                - img
+                - generic: Плечики и плечевые накладки
+              - menuitem "Пломба-ярлыкодержатель":
+                - img
+                - generic: Пломба-ярлыкодержатель
+              - menuitem "Праздничные красоты|Свадебные украшения":
+                - img
+                - generic: Праздничные красоты|Свадебные украшения
+              - menuitem "Пуговицы":
+                - img
+                - generic: Пуговицы
+              - menuitem "Размерные составные этикетки":
+                - img
+                - generic: Размерные составные этикетки
+              - menuitem "Резинка":
+                - img
+                - generic: Резинка
+              - menuitem "Стropa":
+                - img
+                - generic: Стropa
+              - menuitem "Тесьма киперная (х/б)":
+                - img
+                - generic: Тесьма киперная (х/б)
+              - menuitem "Упаковка":
+                - img
+                - generic: Упаковка
+              - menuitem "Услуги, наше производство":
+                - img
+                - generic: Услуги, наше производство
+              - menuitem "Фурнитура для рубашек":
+                - img
+                - generic: Фурнитура для рубашек
+              - menuitem "Фурнитура для швейных машин":
+                - img
+                - generic: Фурнитура для швейных машин
+              - menuitem "Фурнитура для штор":
+                - img
+                - generic: Фурнитура для штор
+              - menuitem "Аппликация":
+                - img
+                - generic: Аппликация
+              - menuitem "Handmade, рукоделие":
+                - img
+                - generic: Handmade, рукоделие
+              - menuitem "Распродажа":
+                - img
+                - generic: Распродажа
+              - menuitem "Архив":
+                - img
+                - generic: Архив
+          - listitem [ref=e48]:
+            - menuitem "Тканини" [ref=e49] [cursor=pointer]:
+              - img [ref=e50]
+              - generic [ref=e54]: Тканини
+            - menu "Подкатегории Тканини":
+              - menuitem "Місце для ваших товарів":
+                - img
+                - generic: Місце для ваших товарів
+              - menuitem "Місце для ваших товарів":
+                - img
+                - generic: Місце для ваших товарів
+              - menuitem "Місце для ваших товарів":
+                - img
+                - generic: Місце для ваших товарів
+          - listitem [ref=e55]:
+            - menuitem "Швейне обладнання" [ref=e56] [cursor=pointer]:
+              - img [ref=e57]
+              - generic [ref=e61]: Швейне обладнання
+            - menu "Подкатегории Швейне обладнання":
+              - menuitem "Місце для ваших товарів":
+                - img
+                - generic: Місце для ваших товарів
+              - menuitem "Місце для ваших товарів":
+                - img
+                - generic: Місце для ваших товарів
+              - menuitem "Місце для ваших товарів":
+                - img
+                - generic: Місце для ваших товарів
+          - listitem [ref=e62]:
+            - menuitem "Спецодяг" [ref=e63] [cursor=pointer]:
+              - img [ref=e64]
+              - generic [ref=e68]: Спецодяг
+            - menu "Подкатегории Спецодяг":
+              - menuitem "Місце для ваших товарів":
+                - img
+                - generic: Місце для ваших товарів
+              - menuitem "Місце для ваших товарів":
+                - img
+                - generic: Місце для ваших товарів
+              - menuitem "Місце для ваших товарів":
+                - img
+                - generic: Місце для ваших товарів
+        - generic [ref=e69]:
+          - button "Дошка оголошень" [ref=e70] [cursor=pointer]
+          - link "Facebook" [ref=e71] [cursor=pointer]:
+            - /url: https://www.facebook.com/furnitura.com.ua/
+            - img [ref=e72]
+          - link "Instagram" [ref=e73] [cursor=pointer]:
+            - /url: https://www.instagram.com/furnitura.com.ua/
+            - img [ref=e74]
+          - link "Viber" [ref=e75] [cursor=pointer]:
+            - /url: https://invite.viber.com/?g2=AQA88e2VOaIXukpjKHVkzOgprvkYXbXE43D6a%2Bxtgp6t86NSdVCINdT3t14Oei%2FB
+            - img [ref=e76]
+          - link "Telegram" [ref=e77] [cursor=pointer]:
+            - /url: https://t.me/furnituracomua
+            - img [ref=e78]
+          - link "Скарга керівнику" [ref=e79] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e80]
+  - main [ref=e82]:
+    - generic [ref=e85]:
+      - generic [ref=e86]:
+        - button "Previous slide" [disabled]:
+          - img
+        - button "Next slide" [ref=e87] [cursor=pointer]:
+          - img [ref=e88]
+      - generic [ref=e90]:
+        - group "1 / 2" [ref=e91]:
+          - generic [ref=e92]:
+            - generic [ref=e94]:
+              - text: Знижки на товари від
+              - text: партнерів 30% до 14.03
+            - generic [ref=e96]:
+              - generic [ref=e97]:
+                - group "1 / 7" [ref=e98]:
+                  - generic [ref=e99]:
+                    - generic [ref=e100]: Знижки 10%
+                    - generic [ref=e101]:
+                      - link "Кісточки для білизни (каркаси) Кісточки для білизни (каркаси)" [ref=e102] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Кісточки для білизни (каркаси)" [ref=e104]
+                        - generic [ref=e105]: Кісточки для білизни (каркаси)
+                      - link "Кісточки для білизни (каркаси) Кісточки для білизни (каркаси)" [ref=e106] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Кісточки для білизни (каркаси)" [ref=e108]
+                        - generic [ref=e109]: Кісточки для білизни (каркаси)
+                      - link "Кісточки для білизни (каркаси) Кісточки для білизни (каркаси)" [ref=e110] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Кісточки для білизни (каркаси)" [ref=e112]
+                        - generic [ref=e113]: Кісточки для білизни (каркаси)
+                      - link "Кісточки для білизни (каркаси) Кісточки для білизни (каркаси)" [ref=e114] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Кісточки для білизни (каркаси)" [ref=e116]
+                        - generic [ref=e117]: Кісточки для білизни (каркаси)
+                    - link "Побачити більше" [ref=e118] [cursor=pointer]:
+                      - /url: "#"
+                - group "2 / 7" [ref=e119]:
+                  - generic [ref=e120]:
+                    - generic [ref=e121]: Знижки 20%
+                    - generic [ref=e122]:
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e123] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e125]
+                        - generic [ref=e126]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e127] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e129]
+                        - generic [ref=e130]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e131] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e133]
+                        - generic [ref=e134]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e135] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e137]
+                        - generic [ref=e138]: Підкатегорія продуктів
+                    - link "Побачити більше" [ref=e139] [cursor=pointer]:
+                      - /url: "#"
+                - group "3 / 7" [ref=e140]:
+                  - generic [ref=e141]:
+                    - generic [ref=e142]: Знижки 15%
+                    - generic [ref=e143]:
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e144] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e146]
+                        - generic [ref=e147]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e148] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e150]
+                        - generic [ref=e151]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e152] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e154]
+                        - generic [ref=e155]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e156] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e158]
+                        - generic [ref=e159]: Підкатегорія продуктів
+                    - link "Побачити більше" [ref=e160] [cursor=pointer]:
+                      - /url: "#"
+                - group "4 / 7" [ref=e161]:
+                  - generic [ref=e162]:
+                    - generic [ref=e163]: Знижки 15%
+                    - generic [ref=e164]:
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e165] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e167]
+                        - generic [ref=e168]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e169] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e171]
+                        - generic [ref=e172]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e173] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e175]
+                        - generic [ref=e176]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e177] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e179]
+                        - generic [ref=e180]: Підкатегорія продуктів
+                    - link "Побачити більше" [ref=e181] [cursor=pointer]:
+                      - /url: "#"
+                - group "5 / 7" [ref=e182]:
+                  - generic [ref=e183]:
+                    - generic [ref=e184]: Знижки 15%
+                    - generic [ref=e185]:
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e186] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e188]
+                        - generic [ref=e189]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e190] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e192]
+                        - generic [ref=e193]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e194] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e196]
+                        - generic [ref=e197]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e198] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e200]
+                        - generic [ref=e201]: Підкатегорія продуктів
+                    - link "Побачити більше" [ref=e202] [cursor=pointer]:
+                      - /url: "#"
+                - group "6 / 7" [ref=e203]:
+                  - generic [ref=e204]:
+                    - generic [ref=e205]: Знижки 15%
+                    - generic [ref=e206]:
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e207] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e209]
+                        - generic [ref=e210]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e211] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e213]
+                        - generic [ref=e214]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e215] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e217]
+                        - generic [ref=e218]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e219] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e221]
+                        - generic [ref=e222]: Підкатегорія продуктів
+                    - link "Побачити більше" [ref=e223] [cursor=pointer]:
+                      - /url: "#"
+                - group "7 / 7" [ref=e224]:
+                  - link "banner" [ref=e225] [cursor=pointer]:
+                    - /url: "#"
+                    - img "banner" [ref=e226]
+              - generic [ref=e227]:
+                - button "Go to slide 1" [ref=e228] [cursor=pointer]
+                - button "Go to slide 2" [ref=e229] [cursor=pointer]
+                - button "Go to slide 3" [ref=e230] [cursor=pointer]
+                - button "Go to slide 4" [ref=e231] [cursor=pointer]
+        - group "2 / 2" [ref=e232]:
+          - generic [ref=e233]:
+            - generic [ref=e235]: ВЕСНЯНІ ЗНИЖКИ!
+            - generic [ref=e237]:
+              - generic [ref=e238]:
+                - group "1 / 7" [ref=e239]:
+                  - generic [ref=e240]:
+                    - generic [ref=e241]: Знижки 25%
+                    - generic [ref=e242]:
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e243] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e245]
+                        - generic [ref=e246]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e247] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e249]
+                        - generic [ref=e250]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e251] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e253]
+                        - generic [ref=e254]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e255] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e257]
+                        - generic [ref=e258]: Підкатегорія продуктів
+                    - link "Побачити більше" [ref=e259] [cursor=pointer]:
+                      - /url: "#"
+                - group "2 / 7" [ref=e260]:
+                  - generic [ref=e261]:
+                    - generic [ref=e262]: Знижки 20%
+                    - generic [ref=e263]:
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e264] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e266]
+                        - generic [ref=e267]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e268] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e270]
+                        - generic [ref=e271]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e272] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e274]
+                        - generic [ref=e275]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e276] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e278]
+                        - generic [ref=e279]: Підкатегорія продуктів
+                    - link "Побачити більше" [ref=e280] [cursor=pointer]:
+                      - /url: "#"
+                - group "3 / 7" [ref=e281]:
+                  - generic [ref=e282]:
+                    - generic [ref=e283]: Знижки 15%
+                    - generic [ref=e284]:
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e285] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e287]
+                        - generic [ref=e288]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e289] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e291]
+                        - generic [ref=e292]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e293] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e295]
+                        - generic [ref=e296]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e297] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e299]
+                        - generic [ref=e300]: Підкатегорія продуктів
+                    - link "Побачити більше" [ref=e301] [cursor=pointer]:
+                      - /url: "#"
+                - group "4 / 7" [ref=e302]:
+                  - generic [ref=e303]:
+                    - generic [ref=e304]: Знижки 15%
+                    - generic [ref=e305]:
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e306] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e308]
+                        - generic [ref=e309]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e310] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e312]
+                        - generic [ref=e313]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e314] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e316]
+                        - generic [ref=e317]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e318] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e320]
+                        - generic [ref=e321]: Підкатегорія продуктів
+                    - link "Побачити більше" [ref=e322] [cursor=pointer]:
+                      - /url: "#"
+                - group "5 / 7" [ref=e323]:
+                  - generic [ref=e324]:
+                    - generic [ref=e325]: Знижки 15%
+                    - generic [ref=e326]:
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e327] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e329]
+                        - generic [ref=e330]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e331] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e333]
+                        - generic [ref=e334]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e335] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e337]
+                        - generic [ref=e338]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e339] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e341]
+                        - generic [ref=e342]: Підкатегорія продуктів
+                    - link "Побачити більше" [ref=e343] [cursor=pointer]:
+                      - /url: "#"
+                - group "6 / 7" [ref=e344]:
+                  - generic [ref=e345]:
+                    - generic [ref=e346]: Знижки 15%
+                    - generic [ref=e347]:
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e348] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e350]
+                        - generic [ref=e351]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e352] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e354]
+                        - generic [ref=e355]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e356] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e358]
+                        - generic [ref=e359]: Підкатегорія продуктів
+                      - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e360] [cursor=pointer]:
+                        - /url: "#"
+                        - img "Підкатегорія продуктів" [ref=e362]
+                        - generic [ref=e363]: Підкатегорія продуктів
+                    - link "Побачити більше" [ref=e364] [cursor=pointer]:
+                      - /url: "#"
+                - group "7 / 7" [ref=e365]:
+                  - link "banner" [ref=e366] [cursor=pointer]:
+                    - /url: "#"
+                    - img "banner" [ref=e367]
+              - generic [ref=e368]:
+                - button "Go to slide 1" [ref=e369] [cursor=pointer]
+                - button "Go to slide 2" [ref=e370] [cursor=pointer]
+                - button "Go to slide 3" [ref=e371] [cursor=pointer]
+                - button "Go to slide 4" [ref=e372] [cursor=pointer]
+    - generic [ref=e374]:
+      - list [ref=e376]:
+        - listitem [ref=e377]:
+          - link "Новые поступления" [ref=e378] [cursor=pointer]:
+            - /url: " #"
+            - text: Новые поступления
+            - img [ref=e380]
+        - listitem [ref=e384]:
+          - link "Бельевая фурнитура" [ref=e385] [cursor=pointer]:
+            - /url: " #"
+            - text: Бельевая фурнитура
+            - img [ref=e387]
+        - listitem [ref=e391]:
+          - link "Вспомогательное оборудование" [ref=e392] [cursor=pointer]:
+            - /url: " #"
+            - text: Вспомогательное оборудование
+            - img [ref=e394]
+        - listitem [ref=e398]:
+          - link "Змейка-молния" [ref=e399] [cursor=pointer]:
+            - /url: " #"
+            - text: Змейка-молния
+            - img [ref=e401]
+        - listitem [ref=e405]:
+          - link "Иглы" [ref=e406] [cursor=pointer]:
+            - /url: " #"
+            - text: Иглы
+            - img [ref=e408]
+        - listitem [ref=e412]:
+          - link "Канаты" [ref=e413] [cursor=pointer]:
+            - /url: " #"
+            - text: Канаты
+            - img [ref=e415]
+        - listitem [ref=e419]:
+          - link "Кант втачной" [ref=e420] [cursor=pointer]:
+            - /url: " #"
+            - text: Кант втачной
+            - img [ref=e422]
+        - listitem [ref=e426]:
+          - link "Корсажная лента" [ref=e427] [cursor=pointer]:
+            - /url: " #"
+            - text: Корсажная лента
+            - img [ref=e429]
+        - listitem [ref=e433]:
+          - link "Косая бейка|Окантовка" [ref=e434] [cursor=pointer]:
+            - /url: " #"
+            - text: Косая бейка|Окантовка
+            - img [ref=e436]
+        - listitem [ref=e440]:
+          - link "Кружево" [ref=e441] [cursor=pointer]:
+            - /url: " #"
+            - text: Кружево
+            - img [ref=e443]
+        - listitem [ref=e447]:
+          - link "Лента" [ref=e448] [cursor=pointer]:
+            - /url: " #"
+            - text: Лента
+            - img [ref=e450]
+        - listitem [ref=e454]:
+          - link "Лента, тесьма, стropa" [ref=e455] [cursor=pointer]:
+            - /url: " #"
+            - text: Лента, тесьма, стropa
+            - img [ref=e457]
+        - listitem [ref=e461]:
+          - link "Липучка" [ref=e462] [cursor=pointer]:
+            - /url: " #"
+            - text: Липучка
+            - img [ref=e464]
+        - listitem [ref=e468]:
+          - link "Металлическая и пластмассовая фурнитура" [ref=e469] [cursor=pointer]:
+            - /url: " #"
+            - text: Металлическая и пластмассовая фурнитура
+            - img [ref=e471]
+        - listitem [ref=e475]:
+          - link "Нитка" [ref=e476] [cursor=pointer]:
+            - /url: " #"
+            - text: Нитка
+            - img [ref=e478]
+        - listitem [ref=e482]:
+          - link "Плечики и плечевые накладки" [ref=e483] [cursor=pointer]:
+            - /url: " #"
+            - text: Плечики и плечевые накладки
+            - img [ref=e485]
+        - listitem [ref=e489]:
+          - link "Пломба-ярлыкодержатель" [ref=e490] [cursor=pointer]:
+            - /url: " #"
+            - text: Пломба-ярлыкодержатель
+            - img [ref=e492]
+        - listitem [ref=e496]:
+          - link "Праздничные красоты|Свадебные украшения" [ref=e497] [cursor=pointer]:
+            - /url: " #"
+            - text: Праздничные красоты|Свадебные украшения
+            - img [ref=e499]
+        - listitem [ref=e503]:
+          - link "Пуговицы" [ref=e504] [cursor=pointer]:
+            - /url: " #"
+            - text: Пуговицы
+            - img [ref=e506]
+        - listitem [ref=e510]:
+          - link "Размерные составные этикетки" [ref=e511] [cursor=pointer]:
+            - /url: " #"
+            - text: Размерные составные этикетки
+            - img [ref=e513]
+        - listitem [ref=e517]:
+          - link "Резинка" [ref=e518] [cursor=pointer]:
+            - /url: " #"
+            - text: Резинка
+            - img [ref=e520]
+        - listitem [ref=e524]:
+          - link "Стropa" [ref=e525] [cursor=pointer]:
+            - /url: " #"
+            - text: Стropa
+            - img [ref=e527]
+        - listitem [ref=e531]:
+          - link "Тесьма киперная (х/б)" [ref=e532] [cursor=pointer]:
+            - /url: " #"
+            - text: Тесьма киперная (х/б)
+            - img [ref=e534]
+        - listitem [ref=e538]:
+          - link "Упаковка" [ref=e539] [cursor=pointer]:
+            - /url: " #"
+            - text: Упаковка
+            - img [ref=e541]
+        - listitem [ref=e545]:
+          - link "Услуги, наше производство" [ref=e546] [cursor=pointer]:
+            - /url: " #"
+            - text: Услуги, наше производство
+            - img [ref=e548]
+        - listitem [ref=e552]:
+          - link "Фурнитура для рубашек" [ref=e553] [cursor=pointer]:
+            - /url: " #"
+            - text: Фурнитура для рубашек
+            - img [ref=e555]
+        - listitem [ref=e559]:
+          - link "Фурнитура для швейных машин" [ref=e560] [cursor=pointer]:
+            - /url: " #"
+            - text: Фурнитура для швейных машин
+            - img [ref=e562]
+        - listitem [ref=e566]:
+          - link "Фурнитура для штор" [ref=e567] [cursor=pointer]:
+            - /url: " #"
+            - text: Фурнитура для штор
+            - img [ref=e569]
+        - listitem [ref=e573]:
+          - link "Аппликация" [ref=e574] [cursor=pointer]:
+            - /url: " #"
+            - text: Аппликация
+            - img [ref=e576]
+        - listitem [ref=e580]:
+          - link "Handmade, рукоделие" [ref=e581] [cursor=pointer]:
+            - /url: " #"
+            - text: Handmade, рукоделие
+            - img [ref=e583]
+        - listitem [ref=e587]:
+          - link "Распродажа" [ref=e588] [cursor=pointer]:
+            - /url: " #"
+            - text: Распродажа
+            - img [ref=e590]
+        - listitem [ref=e594]:
+          - link "Архив" [ref=e595] [cursor=pointer]:
+            - /url: " #"
+            - text: Архив
+            - img [ref=e597]
+      - generic [ref=e601]:
+        - generic [ref=e602]:
+          - generic [ref=e603]: Знижки 51%
+          - generic [ref=e604]:
+            - link "Аппликация - бантик с жемчужиной" [ref=e605] [cursor=pointer]:
+              - /url: /single
+              - generic [ref=e607]: Аппликация - бантик с жемчужиной
+            - link "Аплікація айстра" [ref=e608] [cursor=pointer]:
+              - /url: /single
+              - generic [ref=e610]: Аплікація айстра
+            - link "Аппликация - роза с двумя листиками" [ref=e611] [cursor=pointer]:
+              - /url: /single
+              - generic [ref=e613]: Аппликация - роза с двумя листиками
+            - link "Блискавка 35 см біла+срібло" [ref=e614] [cursor=pointer]:
+              - /url: /single
+              - generic [ref=e616]: Блискавка 35 см біла+срібло
+          - link "Побачити більше" [ref=e617] [cursor=pointer]:
+            - /url: ""
+        - generic [ref=e618]:
+          - generic [ref=e619]: Весняні дні знижок за категоріями Длинное название
+          - generic [ref=e620]:
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e621] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e623]
+              - generic [ref=e624]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e625] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e627]
+              - generic [ref=e628]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e629] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e631]
+              - generic [ref=e632]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e633] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e635]
+              - generic [ref=e636]: Підкатегорія продуктів
+          - link "Побачити більше" [ref=e637] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e638]:
+          - generic [ref=e639]: Весняні дні знижок за категоріями 2
+          - generic [ref=e640]:
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e641] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e643]
+              - generic [ref=e644]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e645] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e647]
+              - generic [ref=e648]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e649] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e651]
+              - generic [ref=e652]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e653] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e655]
+              - generic [ref=e656]: Підкатегорія продуктів
+          - link "Побачити більше" [ref=e657] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e658]:
+          - generic [ref=e659]: Весняні дні знижок за категоріями 3
+          - generic [ref=e660]:
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e661] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e663]
+              - generic [ref=e664]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e665] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e667]
+              - generic [ref=e668]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e669] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e671]
+              - generic [ref=e672]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e673] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e675]
+              - generic [ref=e676]: Підкатегорія продуктів
+          - link "Побачити більше" [ref=e677] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e678]:
+          - generic [ref=e679]: Весняні дні знижок за категоріями 3
+          - generic [ref=e680]:
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e681] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e683]
+              - generic [ref=e684]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e685] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e687]
+              - generic [ref=e688]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e689] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e691]
+              - generic [ref=e692]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e693] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e695]
+              - generic [ref=e696]: Підкатегорія продуктів
+          - link "Побачити більше" [ref=e697] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e698]:
+          - generic [ref=e699]: Весняні дні знижок за категоріями 3
+          - generic [ref=e700]:
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e701] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e703]
+              - generic [ref=e704]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e705] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e707]
+              - generic [ref=e708]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e709] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e711]
+              - generic [ref=e712]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e713] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e715]
+              - generic [ref=e716]: Підкатегорія продуктів
+          - link "Побачити більше" [ref=e717] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e718]:
+          - generic [ref=e719]: Весняні дні знижок за категоріями 3
+          - generic [ref=e720]:
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e721] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e723]
+              - generic [ref=e724]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e725] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e727]
+              - generic [ref=e728]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e729] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e731]
+              - generic [ref=e732]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e733] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e735]
+              - generic [ref=e736]: Підкатегорія продуктів
+          - link "Побачити більше" [ref=e737] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e738]:
+          - generic [ref=e739]: Весняні дні знижок за категоріями 3
+          - generic [ref=e740]:
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e741] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e743]
+              - generic [ref=e744]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e745] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e747]
+              - generic [ref=e748]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e749] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e751]
+              - generic [ref=e752]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e753] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e755]
+              - generic [ref=e756]: Підкатегорія продуктів
+          - link "Побачити більше" [ref=e757] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e758]:
+          - generic [ref=e759]: Весняні дні знижок за категоріями 3
+          - generic [ref=e760]:
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e761] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e763]
+              - generic [ref=e764]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e765] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e767]
+              - generic [ref=e768]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e769] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e771]
+              - generic [ref=e772]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e773] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e775]
+              - generic [ref=e776]: Підкатегорія продуктів
+          - link "Побачити більше" [ref=e777] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e778]:
+          - generic [ref=e779]: Весняні дні знижок за категоріями 3
+          - generic [ref=e780]:
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e781] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e783]
+              - generic [ref=e784]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e785] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e787]
+              - generic [ref=e788]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e789] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e791]
+              - generic [ref=e792]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e793] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e795]
+              - generic [ref=e796]: Підкатегорія продуктів
+          - link "Побачити більше" [ref=e797] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e798]:
+          - generic [ref=e799]: Весняні дні знижок за категоріями 3
+          - generic [ref=e800]:
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e801] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e803]
+              - generic [ref=e804]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e805] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e807]
+              - generic [ref=e808]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e809] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e811]
+              - generic [ref=e812]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e813] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e815]
+              - generic [ref=e816]: Підкатегорія продуктів
+          - link "Побачити більше" [ref=e817] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e818]:
+          - generic [ref=e819]: Весняні дні знижок за категоріями 3
+          - generic [ref=e820]:
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e821] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e823]
+              - generic [ref=e824]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e825] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e827]
+              - generic [ref=e828]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e829] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e831]
+              - generic [ref=e832]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e833] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e835]
+              - generic [ref=e836]: Підкатегорія продуктів
+          - link "Побачити більше" [ref=e837] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e838]:
+          - generic [ref=e839]: Весняні дні знижок за категоріями 3
+          - generic [ref=e840]:
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e841] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e843]
+              - generic [ref=e844]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e845] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e847]
+              - generic [ref=e848]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e849] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e851]
+              - generic [ref=e852]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e853] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e855]
+              - generic [ref=e856]: Підкатегорія продуктів
+          - link "Побачити більше" [ref=e857] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e858]:
+          - generic [ref=e859]: Весняні дні знижок за категоріями 4
+          - generic [ref=e860]:
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e861] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e863]
+              - generic [ref=e864]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e865] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e867]
+              - generic [ref=e868]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e869] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e871]
+              - generic [ref=e872]: Підкатегорія продуктів
+            - link "Підкатегорія продуктів Підкатегорія продуктів" [ref=e873] [cursor=pointer]:
+              - /url: "#"
+              - img "Підкатегорія продуктів" [ref=e875]
+              - generic [ref=e876]: Підкатегорія продуктів
+          - link "Побачити більше" [ref=e877] [cursor=pointer]:
+            - /url: "#"
+    - generic [ref=e878]:
+      - heading "Переглянуті" [level=2] [ref=e879]
+      - generic [ref=e881]:
+        - generic [ref=e882]:
+          - button "Previous slide" [disabled]:
+            - img
+          - button "Next slide" [ref=e883] [cursor=pointer]:
+            - img [ref=e884]
+        - generic [ref=e885]:
+          - group "1 / 6" [ref=e886]:
+            - generic [ref=e887]:
+              - generic [ref=e888]:
+                - generic [ref=e889]:
+                  - link [ref=e890] [cursor=pointer]:
+                    - /url: "#"
+                    - img [ref=e891]
+                  - link [ref=e893] [cursor=pointer]:
+                    - /url: "#"
+                    - img [ref=e894]
+                - generic [ref=e896]: "Код: 20677"
+              - link "Дірокол посилений" [ref=e897] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e899]: Дірокол посилений
+              - generic [ref=e900]:
+                - generic [ref=e901]: 520.41 грн.
+                - button "Купити" [ref=e902] [cursor=pointer]
+          - group "2 / 6" [ref=e903]:
+            - generic [ref=e904]:
+              - generic [ref=e905]:
+                - generic [ref=e906]:
+                  - link [ref=e907] [cursor=pointer]:
+                    - /url: "#"
+                    - img [ref=e908]
+                  - link [ref=e910] [cursor=pointer]:
+                    - /url: "#"
+                    - img [ref=e911]
+                - generic [ref=e913]: "Код: 24155"
+              - link "Пензлик підвіска електрик (синій)" [ref=e914] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e916]: Пензлик підвіска електрик (синій)
+              - generic [ref=e917]:
+                - generic [ref=e918]: 8.36 грн.
+                - button "Купити" [ref=e919] [cursor=pointer]
+          - group "3 / 6" [ref=e920]:
+            - generic [ref=e921]:
+              - generic [ref=e922]:
+                - generic [ref=e923]:
+                  - link [ref=e924] [cursor=pointer]:
+                    - /url: "#"
+                    - img [ref=e925]
+                  - link [ref=e927] [cursor=pointer]:
+                    - /url: "#"
+                    - img [ref=e928]
+                - generic [ref=e930]: "Код: 41352"
+              - link "Гудзик плоский 24/2, в упак 100 шт, кольоровий" [ref=e931] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e933]: Гудзик плоский 24/2, в упак 100 шт, кольоровий
+              - generic [ref=e934]:
+                - generic [ref=e935]: 146.3 грн.
+                - button "Купити" [ref=e936] [cursor=pointer]
+          - group "4 / 6" [ref=e937]:
+            - generic [ref=e938]:
+              - generic [ref=e939]:
+                - generic [ref=e940]:
+                  - link [ref=e941] [cursor=pointer]:
+                    - /url: "#"
+                    - img [ref=e942]
+                  - link [ref=e944] [cursor=pointer]:
+                    - /url: "#"
+                    - img [ref=e945]
+                - generic [ref=e947]: "Код: 45926"
+              - link "Мереживо Zira арт.727-12,біле, 3 см" [ref=e948] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e950]: Мереживо Zira арт.727-12,біле, 3 см
+              - generic [ref=e951]:
+                - generic [ref=e952]: 95000.99 грн.
+                - button "Купити" [ref=e953] [cursor=pointer]
+          - group "5 / 6" [ref=e954]:
+            - generic [ref=e955]:
+              - generic [ref=e956]:
+                - generic [ref=e957]:
+                  - link [ref=e958] [cursor=pointer]:
+                    - /url: "#"
+                    - img [ref=e959]
+                  - link [ref=e961] [cursor=pointer]:
+                    - /url: "#"
+                    - img [ref=e962]
+                - generic [ref=e964]: "Код: 24155"
+              - link "Пензлик підвіска електрик (синій)" [ref=e965] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e967]: Пензлик підвіска електрик (синій)
+              - generic [ref=e968]:
+                - generic [ref=e969]: 8.36 грн.
+                - button "Купити" [ref=e970] [cursor=pointer]
+          - group "6 / 6" [ref=e971]:
+            - generic [ref=e972]:
+              - generic [ref=e973]:
+                - generic [ref=e974]:
+                  - link [ref=e975] [cursor=pointer]:
+                    - /url: "#"
+                    - img [ref=e976]
+                  - link [ref=e978] [cursor=pointer]:
+                    - /url: "#"
+                    - img [ref=e979]
+                - generic [ref=e981]: "Код: 39348"
+              - link "Дублерин Bistretch білий 70гр, 150 см" [ref=e982] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e984]: Дублерин Bistretch білий 70гр, 150 см
+              - generic [ref=e985]:
+                - generic [ref=e986]: 62.7 грн.
+                - button "Купити" [ref=e987] [cursor=pointer]
+  - contentinfo [ref=e988]:
+    - generic [ref=e989]:
+      - generic [ref=e990]:
+        - generic [ref=e991]:
+          - heading "ЧАС РОБОТи" [level=3] [ref=e992]:
+            - img [ref=e994]
+            - text: ЧАС РОБОТи
+          - list [ref=e997]:
+            - listitem [ref=e998]: "ПН-ПТ: 10-17:00"
+            - listitem [ref=e999]: "СБ: 10-16:00"
+        - generic [ref=e1000]:
+          - heading "пропозиціі та зауваження" [level=3] [ref=e1001]:
+            - img [ref=e1003]
+            - text: пропозиціі та зауваження
+          - list [ref=e1006]:
+            - listitem [ref=e1007]:
+              - img [ref=e1009]
+              - link "fashion-box@ukr.net" [ref=e1011] [cursor=pointer]:
+                - /url: mailto:fashion-box@ukr.net
+            - listitem [ref=e1012]:
+              - img [ref=e1014]
+              - link "(067) 484-27-46" [ref=e1016] [cursor=pointer]:
+                - /url: tel:+380674842746
+        - generic [ref=e1017]:
+          - heading "ДОСТАВКА" [level=4] [ref=e1018]:
+            - img [ref=e1020]
+            - text: ДОСТАВКА
+          - list [ref=e1023]:
+            - listitem [ref=e1024]:
+              - link "Нова пошта" [ref=e1025] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1026]:
+              - link "Автолюкс" [ref=e1027] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1028]:
+              - link "Делівері" [ref=e1029] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1030]:
+              - link "Укр пошта" [ref=e1031] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1032]:
+              - link "Sat" [ref=e1033] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1034]:
+              - link "Самовивіз" [ref=e1035] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=e1036]:
+        - generic [ref=e1037]:
+          - heading "call-центр" [level=4] [ref=e1038]:
+            - img [ref=e1040]
+            - text: call-центр
+          - list [ref=e1042]:
+            - listitem [ref=e1043]:
+              - text: "ТЕЛ:"
+              - link "+380 (800) 33-20-33" [ref=e1044] [cursor=pointer]:
+                - /url: tel:+380800332033
+            - listitem [ref=e1045]:
+              - text: "ТЕЛ:"
+              - link "+380 (067) 00-99-330" [ref=e1046] [cursor=pointer]:
+                - /url: tel:+380670099330
+            - listitem [ref=e1047]:
+              - img [ref=e1049]
+              - text: М. Одеса, вул. Червонослобідська, 8
+            - listitem [ref=e1051]:
+              - img [ref=e1053]
+              - link "fashion-box@ukr.net" [ref=e1055] [cursor=pointer]:
+                - /url: mailto:fashion-box@ukr.net
+            - listitem [ref=e1056]:
+              - link "Договір публічної оферти" [ref=e1057] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e1058]:
+          - heading "оплата" [level=4] [ref=e1059]:
+            - img [ref=e1061]
+            - text: оплата
+          - generic [ref=e1063]:
+            - list [ref=e1064]:
+              - listitem [ref=e1065]:
+                - link "Готівковий розрахунок у магазині чи ринку" [ref=e1066] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e1067]:
+                - link "Сплата за реквізитами згідно з Договором" [ref=e1068] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e1069]:
+                - link "Оплата за товар платнику ПДВ" [ref=e1070] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e1071]: "Отримувач:"
+              - listitem [ref=e1072]: "Назва отримувача: ПП МОДЕРН МПП"
+              - listitem [ref=e1073]: "Код отримувача: 22465691"
+              - listitem [ref=e1074]: "Назва банку: АТ КБ \"ПриватБанк\""
+            - generic [ref=e1075]:
+              - img [ref=e1077]
+              - img [ref=e1083]
+              - img [ref=e1087]
+      - generic [ref=e1102]:
+        - heading "ми в соцмережах" [level=4] [ref=e1103]
+        - generic [ref=e1104]:
+          - link "Facebook" [ref=e1105] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e1106]
+          - link "Viber" [ref=e1108] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e1109]
+          - link "Telegram" [ref=e1111] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e1112]
+          - link "Скарга керівнику" [ref=e1114] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e1115]
+      - generic [ref=e1118]:
+        - generic [ref=e1119]:
+          - heading "Зателефонуйте нам" [level=4] [ref=e1120]
+          - link "0 (800) 33-20-33" [ref=e1121] [cursor=pointer]:
+            - /url: tel:+380800332033
+          - link "(067) 00-99-330" [ref=e1122] [cursor=pointer]:
+            - /url: tel:+380670099330
+          - button "Замовити дзвінок" [ref=e1123] [cursor=pointer]
+          - paragraph [ref=e1124]: Усі дзвінки безкоштовні
+        - list [ref=e1126]:
+          - listitem [ref=e1127]:
+            - link "UA" [ref=e1128] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e1129]: "|"
+          - listitem [ref=e1130]:
+            - link "RU" [ref=e1131] [cursor=pointer]:
+              - /url: "#"
+    - link [ref=e1132] [cursor=pointer]:
+      - /url: "#top"
+      - img [ref=e1133]
