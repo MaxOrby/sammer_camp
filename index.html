@@ -2700,31 +2700,30 @@
 
       // Gallery infinite scroll marquee (GSAP ticker)
       (function () {
-        const SPEED = 0.5; // px per frame at 60fps
+        var SPEED = 0.5; // px per frame at 60fps
 
         function initMarquee(rowEl, direction) {
-          const tracks = rowEl.querySelectorAll('.gallery-track');
+          var tracks = rowEl.querySelectorAll('.gallery-track');
           if (tracks.length < 2) return;
 
-          const imgs = rowEl.querySelectorAll('img');
-          let loaded = 0;
-          let started = false;
+          var running = false;
 
           function start() {
-            if (started) return;
-            loaded++;
-            if (loaded < imgs.length) return;
-            started = true;
+            if (running) return;
 
-            // Measure ONE track after all images loaded
             var trackWidth = tracks[0].offsetWidth;
-            if (trackWidth === 0) return;
+            if (trackWidth === 0) {
+              setTimeout(start, 100);
+              return;
+            }
+
+            running = true;
 
             // Set initial position
             var currentX = direction > 0 ? -trackWidth : 0;
             gsap.set(rowEl, { x: currentX, force3D: true });
 
-            // Animate with GSAP ticker for frame-perfect consistency
+            // Animate with GSAP ticker
             gsap.ticker.add(function () {
               currentX += SPEED * direction;
 
@@ -2735,23 +2734,16 @@
             });
           }
 
-          if (imgs.length === 0) {
+          // Wait for full page load (all images rendered) then start
+          if (document.readyState === 'complete') {
             start();
-            return;
+          } else {
+            window.addEventListener('load', start);
           }
-
-          imgs.forEach(function (img) {
-            if (img.complete) {
-              start();
-            } else {
-              img.addEventListener('load', start);
-              img.addEventListener('error', start);
-            }
-          });
         }
 
-        const leftRow = document.getElementById('gallery-row-left');
-        const rightRow = document.getElementById('gallery-row-right');
+        var leftRow = document.getElementById('gallery-row-left');
+        var rightRow = document.getElementById('gallery-row-right');
 
         if (leftRow) initMarquee(leftRow, -1);
         if (rightRow) initMarquee(rightRow, 1);
