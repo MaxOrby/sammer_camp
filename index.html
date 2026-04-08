@@ -2490,32 +2490,54 @@
             }
 
             var halfWidth = Math.round(totalWidth / 2); // width of one set
+            var tween;
 
-            if (direction < 0) {
-              gsap.set(rowEl, { x: 0, force3D: true });
-              gsap.to(rowEl, {
-                x: -halfWidth,
-                duration: DURATION,
-                ease: 'none',
-                repeat: -1,
-                force3D: true,
-                onRepeat: function () {
-                  gsap.set(rowEl, { x: 0 });
-                },
-              });
-            } else {
-              gsap.set(rowEl, { x: -halfWidth, force3D: true });
-              gsap.to(rowEl, {
-                x: 0,
-                duration: DURATION,
-                ease: 'none',
-                repeat: -1,
-                force3D: true,
-                onRepeat: function () {
-                  gsap.set(rowEl, { x: -halfWidth });
-                },
-              });
+            function animate(fromX) {
+              gsap.killTweensOf(rowEl);
+              if (direction < 0) {
+                gsap.set(rowEl, {
+                  x: fromX !== undefined ? fromX : 0,
+                  force3D: true,
+                });
+                tween = gsap.to(rowEl, {
+                  x: -halfWidth,
+                  duration: DURATION,
+                  ease: 'none',
+                  repeat: -1,
+                  force3D: true,
+                  onRepeat: function () {
+                    gsap.set(rowEl, { x: 0 });
+                  },
+                });
+              } else {
+                gsap.set(rowEl, {
+                  x: fromX !== undefined ? fromX : -halfWidth,
+                  force3D: true,
+                });
+                tween = gsap.to(rowEl, {
+                  x: 0,
+                  duration: DURATION,
+                  ease: 'none',
+                  repeat: -1,
+                  force3D: true,
+                  onRepeat: function () {
+                    gsap.set(rowEl, { x: -halfWidth });
+                  },
+                });
+              }
             }
+
+            animate();
+
+            // Pause on hover
+            rowEl.addEventListener('mouseenter', function () {
+              gsap.killTweensOf(rowEl);
+            });
+
+            rowEl.addEventListener('mouseleave', function () {
+              var currentX = gsap.getProperty(rowEl, 'x');
+              animate(currentX);
+            });
           }
 
           if (document.readyState === 'complete') {
