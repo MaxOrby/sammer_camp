@@ -2029,6 +2029,14 @@
       (function () {
         gsap.registerPlugin(ScrollTrigger);
 
+        // Force initial state BEFORE any ScrollTrigger runs
+        gsap.set('.hero-logo', { opacity: 0, y: 32 });
+        gsap.set('.hero-title', { opacity: 0, y: 32 });
+        gsap.set('.hero-text', { opacity: 0, y: 32 });
+        gsap.set('.hero-btn', { opacity: 0, y: 32 });
+        gsap.set('.hero-girl', { opacity: 0, x: -64 });
+        gsap.set('.hero-boy', { opacity: 0, x: 64 });
+
         const tl = gsap.timeline({
           defaults: { ease: 'power3.out' },
           onComplete: () => {
@@ -2103,6 +2111,7 @@
           opacity: 0,
           ease: 'none',
           force3D: true,
+          immediateRender: false,
         });
 
         // Parallax effect for stars - different speeds for depth
@@ -2116,6 +2125,7 @@
           y: 80,
           ease: 'none',
           force3D: true,
+          immediateRender: false,
         });
 
         gsap.to('.star-middle', {
@@ -2128,6 +2138,7 @@
           y: 120,
           ease: 'none',
           force3D: true,
+          immediateRender: false,
         });
 
         gsap.to('.star-front', {
@@ -2140,6 +2151,7 @@
           y: 180,
           ease: 'none',
           force3D: true,
+          immediateRender: false,
         });
       })();
 
