@@ -2698,26 +2698,56 @@
         });
       })();
 
-      // Gallery infinite scroll marquee
+      // Gallery infinite scroll marquee (GSAP ticker)
       (function () {
         const SPEED = 0.5; // px per frame at 60fps
 
         function initMarquee(rowEl, direction) {
-          const track = rowEl.querySelector('.gallery-track');
-          if (!track) return;
-          const trackWidth = track.scrollWidth / 2; // one set width
+          const tracks = rowEl.querySelectorAll('.gallery-track');
+          if (tracks.length < 2) return;
 
-          let currentX = 0;
+          const imgs = rowEl.querySelectorAll('img');
+          let loaded = 0;
+          let started = false;
 
-          function animate() {
-            currentX += SPEED * direction;
-            if (direction < 0 && currentX <= -trackWidth) currentX = 0;
-            if (direction > 0 && currentX >= 0) currentX = -trackWidth;
+          function start() {
+            if (started) return;
+            loaded++;
+            if (loaded < imgs.length) return;
+            started = true;
+
+            // Measure ONE track after all images loaded
+            var trackWidth = tracks[0].offsetWidth;
+            if (trackWidth === 0) return;
+
+            // Set initial position
+            var currentX = direction > 0 ? -trackWidth : 0;
             gsap.set(rowEl, { x: currentX, force3D: true });
-            requestAnimationFrame(animate);
+
+            // Animate with GSAP ticker for frame-perfect consistency
+            gsap.ticker.add(function () {
+              currentX += SPEED * direction;
+
+              if (direction < 0 && currentX <= -trackWidth) currentX = 0;
+              if (direction > 0 && currentX >= 0) currentX = -trackWidth;
+
+              gsap.set(rowEl, { x: currentX, force3D: true });
+            });
           }
 
-          requestAnimationFrame(animate);
+          if (imgs.length === 0) {
+            start();
+            return;
+          }
+
+          imgs.forEach(function (img) {
+            if (img.complete) {
+              start();
+            } else {
+              img.addEventListener('load', start);
+              img.addEventListener('error', start);
+            }
+          });
         }
 
         const leftRow = document.getElementById('gallery-row-left');
