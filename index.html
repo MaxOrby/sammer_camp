@@ -2719,6 +2719,9 @@
 
             running = true;
 
+            // Explicitly set row width so Safari knows the exact dimensions
+            rowEl.style.width = trackWidth * 2 + 'px';
+
             // Set initial position
             var currentX = direction > 0 ? -trackWidth : 0;
             gsap.set(rowEl, { x: currentX, force3D: true });
