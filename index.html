@@ -1384,35 +1384,10 @@
       </div>
 
       <style>
-        @keyframes scroll-left {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-        @keyframes scroll-right {
-          0% {
-            transform: translateX(-50%);
-          }
-          100% {
-            transform: translateX(0);
-          }
-        }
         .gallery-row {
           display: flex;
           gap: 16px;
           width: max-content;
-        }
-        .gallery-row--left {
-          animation: scroll-left 40s linear infinite;
-        }
-        .gallery-row--right {
-          animation: scroll-right 40s linear infinite;
-        }
-        .gallery-row:hover {
-          animation-play-state: paused;
         }
         .gallery-track {
           display: flex;
@@ -1448,271 +1423,275 @@
 
       <div class="space-y-4">
         <!-- Top row — scrolls left -->
-        <div class="gallery-row gallery-row--left overflow-hidden">
-          <div class="gallery-track">
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-1.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
+        <div class="overflow-hidden">
+          <div class="gallery-row" id="gallery-row-left">
+            <div class="gallery-track">
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-1.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-2.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-3.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-4.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-5.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-6.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-7.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-8.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-9.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
             </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-2.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-3.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-4.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-5.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-6.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-7.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-8.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-9.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <!-- Duplicate for seamless loop -->
-          <div class="gallery-track">
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-1.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-2.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-3.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-4.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-5.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-6.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-7.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-8.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-9.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
+            <!-- Duplicate for seamless loop -->
+            <div class="gallery-track">
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-1.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-2.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-3.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-4.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-5.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-6.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-7.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-8.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-9.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Bottom row — scrolls right -->
-        <div class="gallery-row gallery-row--right overflow-hidden">
-          <div class="gallery-track">
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-10.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
+        <div class="overflow-hidden">
+          <div class="gallery-row" id="gallery-row-right">
+            <div class="gallery-track">
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-10.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-11.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-12.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-13.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-14.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-15.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-16.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-17.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-18.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
             </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-11.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-12.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-13.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-14.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-15.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-16.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-17.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-18.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <!-- Duplicate for seamless loop -->
-          <div class="gallery-track">
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-10.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-11.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-12.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-13.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-14.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-15.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-16.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-17.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-18.jpg"
-                alt="Табір"
-                loading="lazy"
-              />
+            <!-- Duplicate for seamless loop -->
+            <div class="gallery-track">
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-10.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-11.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-12.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-13.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-14.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-15.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-16.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-17.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://academiia-sportu.ua/wp-content/uploads/2026/02/fotografii-litniy-tabir-akademia-2025-18.jpg"
+                  alt="Табір"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -2717,6 +2696,35 @@
             '-=0.6',
           );
         });
+      })();
+
+      // Gallery infinite scroll marquee
+      (function () {
+        const SPEED = 0.5; // px per frame at 60fps
+
+        function initMarquee(rowEl, direction) {
+          const track = rowEl.querySelector('.gallery-track');
+          if (!track) return;
+          const trackWidth = track.scrollWidth / 2; // one set width
+
+          let currentX = 0;
+
+          function animate() {
+            currentX += SPEED * direction;
+            if (direction < 0 && currentX <= -trackWidth) currentX = 0;
+            if (direction > 0 && currentX >= 0) currentX = -trackWidth;
+            gsap.set(rowEl, { x: currentX, force3D: true });
+            requestAnimationFrame(animate);
+          }
+
+          requestAnimationFrame(animate);
+        }
+
+        const leftRow = document.getElementById('gallery-row-left');
+        const rightRow = document.getElementById('gallery-row-right');
+
+        if (leftRow) initMarquee(leftRow, -1);
+        if (rightRow) initMarquee(rightRow, 1);
       })();
     </script>
   </body>
