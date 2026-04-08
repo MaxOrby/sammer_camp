@@ -1384,14 +1384,19 @@
       </div>
 
       <style>
+        .gallery-window {
+          overflow: hidden;
+          position: relative;
+        }
         .gallery-row {
           display: flex;
           gap: 16px;
-          width: max-content;
+          will-change: transform;
         }
         .gallery-track {
           display: flex;
           gap: 16px;
+          flex-shrink: 0;
         }
         .gallery-track .gallery-item {
           flex: 0 0 280px;
@@ -1423,7 +1428,7 @@
 
       <div class="space-y-4">
         <!-- Top row — scrolls left -->
-        <div class="overflow-hidden">
+        <div class="gallery-window">
           <div class="gallery-row" id="gallery-row-left">
             <div class="gallery-track">
               <div class="gallery-item">
@@ -1560,7 +1565,7 @@
         </div>
 
         <!-- Bottom row — scrolls right -->
-        <div class="overflow-hidden">
+        <div class="gallery-window">
           <div class="gallery-row" id="gallery-row-right">
             <div class="gallery-track">
               <div class="gallery-item">
@@ -2698,46 +2703,53 @@
         });
       })();
 
-      // Gallery infinite scroll marquee (GSAP ticker)
+      // Gallery infinite scroll marquee using GSAP tweens
       (function () {
-        var SPEED = 0.5; // px per frame at 60fps
+        var DURATION = 40; // seconds for one full loop
 
         function initMarquee(rowEl, direction) {
           var tracks = rowEl.querySelectorAll('.gallery-track');
           if (tracks.length < 2) return;
 
-          var running = false;
-
           function start() {
-            if (running) return;
-
             var trackWidth = tracks[0].offsetWidth;
             if (trackWidth === 0) {
               setTimeout(start, 100);
               return;
             }
 
-            running = true;
-
-            // Explicitly set row width so Safari knows the exact dimensions
+            // Ensure row has explicit width
             rowEl.style.width = trackWidth * 2 + 'px';
 
-            // Set initial position
-            var currentX = direction > 0 ? -trackWidth : 0;
-            gsap.set(rowEl, { x: currentX, force3D: true });
-
-            // Animate with GSAP ticker
-            gsap.ticker.add(function () {
-              currentX += SPEED * direction;
-
-              if (direction < 0 && currentX <= -trackWidth) currentX = 0;
-              if (direction > 0 && currentX >= 0) currentX = -trackWidth;
-
-              gsap.set(rowEl, { x: currentX, force3D: true });
-            });
+            if (direction < 0) {
+              // Scroll left: 0 → -trackWidth, then jump back to 0
+              gsap.set(rowEl, { x: 0, force3D: true });
+              gsap.to(rowEl, {
+                x: -trackWidth,
+                duration: DURATION,
+                ease: 'none',
+                repeat: -1,
+                force3D: true,
+                onRepeat: function () {
+                  gsap.set(rowEl, { x: 0 });
+                },
+              });
+            } else {
+              // Scroll right: -trackWidth → 0, then jump back to -trackWidth
+              gsap.set(rowEl, { x: -trackWidth, force3D: true });
+              gsap.to(rowEl, {
+                x: 0,
+                duration: DURATION,
+                ease: 'none',
+                repeat: -1,
+                force3D: true,
+                onRepeat: function () {
+                  gsap.set(rowEl, { x: -trackWidth });
+                },
+              });
+            }
           }
 
-          // Wait for full page load (all images rendered) then start
           if (document.readyState === 'complete') {
             start();
           } else {
