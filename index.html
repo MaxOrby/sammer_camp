@@ -2646,7 +2646,8 @@
       <!-- Toggle button -->
       <button
         id="chat-toggle"
-        class="w-14 h-14 bg-brand-green rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300 relative"
+        class="w-14 h-14 bg-brand-red rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300 relative animate-ping"
+        style="animation-duration: 2s; animation-iteration-count: 3"
         onclick="
           document.getElementById('chat-widget').classList.toggle('open')
         "
@@ -2719,6 +2720,7 @@
               chatIcon.classList.add('hidden');
               closeIcon.classList.add('visible');
               chatBubble.classList.remove('visible');
+              this.classList.remove('animate-ping');
             } else {
               chatButtons.classList.remove('active');
               chatIcon.classList.remove('hidden');
